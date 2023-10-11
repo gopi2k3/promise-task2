@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+
+
+<script>
+
+
+let ans=new Promise(function(resolve,reject){
+	
+	let user=prompt("Enter Head Or Tail");
+	
+	let users=user.toUpperCase()
+	
+	if( users=='HEAD'){
+		resolve(`True`)
+	}
+	else if(users=='TAIL'){
+		
+		reject(`false`)
+	}
+	else{
+		console.log(`Invalid`)
+	}
+	
+	
+})
+
+ans.then((msg)=>{
+	document.write(msg)
+}).catch((msg)=>{
+	document.write(msg)
+})
+</script>
+</body>
+</html>
